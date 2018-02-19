@@ -97,8 +97,7 @@ namespace IntermediatorBotSample.CommandHandling
 
                         break;
 
-                    case string baseCommand when (baseCommand.Equals(Commands.CommandAcceptRequest)
-                                                  || baseCommand.Equals(Commands.CommandRejectRequest)):
+                    case string baseCommand when (baseCommand.Equals(Commands.CommandAcceptRequest) || baseCommand.Equals(Commands.CommandRejectRequest)):
                         // Accept/reject conversation request
                         bool doAccept = baseCommand.Equals(Commands.CommandAcceptRequest);
 
